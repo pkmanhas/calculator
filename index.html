@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style(c).css">
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <center>
+    <section id="iv">
+   
+
+        <input type="value" id="he">
+
+        <button class="bt" onclick="hr('AC')"> AC</button>
+        <button class="bt" onclick="iya('.')"> .</button>
+        <button class="bt" onclick="iya('%')">%</button>
+        <button class="bt3" onclick="iya('/')">/</button><br>
+
+        <button class="bt4" onclick="iya(7)"> 7</button>
+        <button class="bt4" onclick="iya(8)">8</button>
+        <button class="bt4" onclick="iya(9)">9</button>
+        <button class="bt3" onclick="iya('*')">*</button>
+
+
+        <button class="bt4" onclick="iya(4)"> 4</button>
+        <button class="bt4" onclick="iya(5)"> 5</button>
+        <button class="bt4" onclick="iya(6)">6</button>
+        <button class="bt3" onclick="iya('-')">-</button>
+
+        <button class="bt4" onclick="iya(1)"> 1</button>
+        <button class="bt4" onclick="iya(2)">2</button>
+        <button class="bt4" onclick="iya(3)">3</button>
+        <button class="bt3" onclick="iya('+')">+</button>
+
+        <button class="bt1" onclick="iya(0)"> 0</button>
+        <button class="bt2" onclick="iya('00')">00</button>
+        <button class="bt3" onclick="hello('=')">=</button>
+
+
+        </form>
+   
+
+    </section>
+</center>
+
+
+</body>
+<script>
+    function iya(x) {
+        document.getElementById("he").value += x;
+    }
+    function hello() {
+        let x = document.getElementById("he").value;
+        document.getElementById("he").value = eval(x)
+    }
+    function hr() {
+        document.getElementById("he").value = " ";
+    }
+    
+
+
+   
+</script>
+
+
+</html>
